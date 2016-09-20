@@ -1,12 +1,25 @@
 ---
 layout: default
+date: 2014-9-17
 ---
 
 {% include base_path %}
 
+
+<h2> there is an image </h2>
+
+{{ page.header }}
+{% capture formatted_date %}{{ page.date | date: "%-d %B %Y" }}{% endcapture %}
+{% include page__hero.html %}
+
+
+{% if page.header.image %}
+{% endif %}
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% endif %}
+
 
 {% if page.url != "/" and site.breadcrumbs %}
   {% unless paginator %}
