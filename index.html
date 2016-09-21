@@ -1,11 +1,16 @@
 ---
 layout: single
 author_profile: true
+header:
+  overlay_color: "#5e616c"
+  overlay_image: bg.jpg
+  caption: "fast"
 ---
 
 {% include base_path %}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
 
 {% for post in paginator.posts %}
   {% include archive-single.html %}
