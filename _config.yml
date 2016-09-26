@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "AI & Machine Learning"
+title                    : "Guillaume de Chambrier"
 title_separator          : "-"
 name                     : "Guillaume de Chambrier"
 description              : "An amazing website."
@@ -84,7 +84,8 @@ author:
   name             : "Guillaume de Chambrier"
   avatar           : "bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "Lausanne, Switzerland"
+  location_GPS     : 46.5196535,6.632
   email            : "chambrierg@gmail.com"
   uri              :
   bitbucket        :
@@ -93,12 +94,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/gpldecha/"
+  github           : "gpldecha"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  ros_answer       : gpldecha
+  linkedin         : guillaume-de-chambrier-57386845
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
@@ -144,6 +146,24 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Collections
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+# _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 
 # Conversion

@@ -2,23 +2,27 @@
 layout: single
 title: Contact
 permalink: /contact/
+author_profile: true
 header:
   overlay_color: "#5e616c"
   overlay_image: bg.jpg
 ---
 
-<html>
-  <body>
+<body>
   <form action="https://formspree.io/chambrierg@gmail.com" method="POST">
-      <p> Name:  <input type="text" name="Guillaume de Chambrier">
-      <p> Email: <input type="email" name="_replyto"> <br>
+       Name:
+       <input type="text" name="Guillaume de Chambrier">
+       Email:
+       <input type="email" name="_replyto">
+       Message:
+       <textarea name="message"></textarea>
       <input type="submit" value="Send">
   </form>
-  </body>
-</html>
+</body>
 
 
 # I AM HERE
+
 <div id="map-canvas" style="width:100%; height:650px"></div>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
