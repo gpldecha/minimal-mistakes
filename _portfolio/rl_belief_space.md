@@ -1,6 +1,6 @@
 ---
 title: Reinforcement Learning in belief space
-excerpt: example project
+excerpt: A POMDP policy is learned from demonstrations and improved in a Reinforcement learning framework.
 permalink: /projects/rl_belief_space/
 header:
   teaser: /projects/rl_pomdp/value-function-th.png
