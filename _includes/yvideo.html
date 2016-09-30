@@ -1,0 +1,18 @@
+
+
+<!-- _includes/image.html -->
+<div class="video-wrapper" >
+  {% if include.width and include.height %}
+      <iframe width="{{include.width}}" height="{{include.height}}" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
+  {% else %}
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
+  {% endif %}
+
+  {% if include.caption %}
+    <br>
+    <div class="boxed">
+        <p class="video-caption"> <b>Video: {{ include.title }}</b> <a name="{{include.cap_id}}"></a> {{ include.caption }}</p>
+    </div>
+  {% endif %}
+
+</div>

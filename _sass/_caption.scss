@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Image caption
+   ========================================================================== */
+
+
+.image-wrapper {
+ text-align: center;
+
+  .image-caption {
+    text-align: left;
+    color: $darker-gray;
+    margin-top: 1ex;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
+
+
+.video-wrapper {
+
+  .video-caption{
+    color: $darker-gray;
+    margin-top: 1ex;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
+
+
+.boxed {
+  border: 1px solid black ;
+}

@@ -2,10 +2,14 @@
 main:
 
   - title: "Projects"
-    url: /portfolio/
+    url: /projects/
 
   - title: "Machine Learning"
     url: /
 
   - title: "Contact"
     url: /contact/
+
+
+docs:
+  - title: Getting Started  

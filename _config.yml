@@ -211,6 +211,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - gif_tag
 
 # mimic GitHub Pages with --safe
 whitelist:
