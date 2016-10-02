@@ -1,7 +1,7 @@
 ---
 title: Syntouch tactile classifier
 permalink: /projects/tactile_classifier/
-excerpt: A tacticle classifier for the Syntouch sensor
+excerpt: A tacticle classifier for the Syntouch artificial finger sensor.
 
 header:
   teaser:  /projects/tactile_classifier/syntouch-th.jpg
