@@ -1,7 +1,7 @@
 ---
 title: Learning a POMDP policy from human demonstrations
 permalink: /projects/belief_space_policy/
-excerpt: Human teachers demonstrate to accomplish a search task to a robot whilst blindfolded.
+excerpt: Human teachers demonstrate a search task to a robot in a "Programming by Demonstration" framework.
 video_path: /projects/belief_pomdp/videos/air_search.wmv
 
 header:
