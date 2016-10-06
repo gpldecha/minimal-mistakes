@@ -7,7 +7,8 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Guillaume de Chambrier"
+title                    : "Dr. de Chambrier, Guillaume"
+home_name                : Home
 title_separator          : "-"
 name                     : "Guillaume de Chambrier"
 description              : "An amazing website."
@@ -83,7 +84,7 @@ analytics:
 author:
   name             : "Guillaume de Chambrier"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : ""
   location         : "Lausanne, Switzerland"
   location_GPS     : 46.5196535,6.632
   email            : "chambrierg@gmail.com"
@@ -152,6 +153,9 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 collections:
   portfolio:
+    output: true
+    permalink: /:collection/:path/
+  ml:
     output: true
     permalink: /:collection/:path/
 
