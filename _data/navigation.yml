@@ -5,11 +5,19 @@ main:
     url: /projects/
 
   - title: "Machine Learning"
-    url: /
+    url: /machine-learning-archive/
+
+  - title: "Computer Science"
+    url: /computer-science-archive/
+
+  - title: "Blog"
+    url: /blog/
 
   - title: "Contact"
     url: /contact/
 
+  - title: "About"
+    url: /about/
 
 docs:
-  - title: Getting Started  
+  - title: Getting Started
