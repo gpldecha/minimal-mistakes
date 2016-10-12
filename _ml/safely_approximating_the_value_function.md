@@ -6,5 +6,3 @@ excerpt: "-Reinforcement Learning-"
 header:
   overlay_color: "#333"
 ---
-
-Hello

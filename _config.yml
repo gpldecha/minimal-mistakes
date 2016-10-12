@@ -158,6 +158,10 @@ collections:
   ml:
     output: true
     permalink: /:collection/:path/
+  cs:
+    output: true
+    permalink: /:collection/:path/
+
 
 defaults:
 # _portfolio

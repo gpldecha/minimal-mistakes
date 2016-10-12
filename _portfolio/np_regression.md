@@ -1,6 +1,6 @@
 ---
 title: Non-parametric regression
-permalink: /projects/ml_toolbox/
+permalink: /projects/np_regression/
 excerpt: A set of regression methods written in C++ with a Python interface.
 
 header:

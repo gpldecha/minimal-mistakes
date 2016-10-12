@@ -1,7 +1,7 @@
 ---
 title: KUKA LWR ROS
 permalink: /projects/kuka_lwr_ros/
-excerpt: A software package which allows to simulate and control the KUKA LWR robot.
+excerpt: A C++ software package which allows to simulate and control the KUKA LWR robot.
 
 header:
   teaser:  /projects/kuka_lwr_ros/kuka-lwr-th.png
