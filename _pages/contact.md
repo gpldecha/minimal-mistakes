@@ -3,8 +3,12 @@ layout: single
 title: Contact
 permalink: /contact/
 author_profile: true
+
 header:
-  overlay_color: "#5e616c"
+  overlay_color: "#333"
+
+excerpt: "Talk to me..."
+
 
 locations: Renens,Switzerland
 
