@@ -1,0 +1,46 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amstext,amsthm}
+\usepackage{xcolor}
+
+\DeclareMathOperator*{\E}{\mathbb{E}_{\pi}}   % rbp
+\newcommand{\Ps}{ P_{ss'}^a}   % rbp
+\newcommand{\R}{ R_{ss'}^a}   % rbp
+
+\begin{document}
+
+\section*{V and Q recursions}
+
+\begin{align}
+ V^{\pi}(s)   &= \E \left\{ \sum\limits_{k=0}^{\infty} \gamma^k r_{t+k+1} | s_t = s \right\} \label{vr-value} \\ 
+ Q^{\pi}(s,a) &= \E \left\{ \sum\limits_{k=0}^{\infty} \gamma^k r_{t+k+1} | s_t = s, a_t = a \right\} \label{qr-value}
+\end{align}
+
+From Sutton's book page 70, Equation (3.10), recursive formulation of the value function update is:
+
+\begin{align}
+ V^{\pi}(s) &= \sum\limits_a \pi(s,a) \underbrace{\sum\limits_{s'} \Ps \left[ \R + \gamma V^{\pi}(s')\right]}_{Q^{\pi}(s,a)} \\
+	    &= \sum\limits_a \pi(s,a) Q^{\pi}(s,a) \label{v-rec}
+\end{align}
+
+As an exercise (Exercise 3.8, page 72 in Suttons book), the same recursion has to be derived, but this time for
+the Q-Value function, Equation \ref{qr-value}.
+
+\begin{align*}
+ Q^{\pi}(s,a) &= \E \left\{ \sum\limits_{k=0}^{\infty} \gamma^k  r_{t+k+1}  | s_t = s, a_t = a \right\}  \\
+	      &= \E \left\{ r_{t+1} + \gamma \sum\limits_{k=0}^{\infty} \gamma^k r_{t+k+2} | s_t = s, a_t = a \right\} \\
+	      &= \E \left\{ r_{t+1} |  s_t = s, a_t = a \right\} + \gamma\, \E \left\{ \sum\limits_{k=0}^{\infty} \gamma^k r_{t+k+1} | \textcolor{red}{s_{t}} = s, a_{t} = a  \right\} \\
+	      &= \sum\limits_{s'} \Ps \R  		 + \gamma \textcolor{red}{\sum\limits_{s'} \Ps} \E \left\{ \sum\limits_{k=0}^{\infty} \gamma^k r_{t+k+2} |  \textcolor{red}{s_{t+1}} = s', \textcolor{blue}{a_{t}} = a  \right\} \\
+	      &= \sum\limits_{s'} \Ps \R 		 + \gamma \sum\limits_{s'} \Ps  \textcolor{blue}{ \sum\limits_{a'} \pi(s',a')} \E \left\{ \sum\limits_{k=0}^{\infty} \gamma^k r_{t+k+2}  |  s_{t+1} = s', \textcolor{blue}{a_{t+1}} = a'  \right\} \\
+      	      &= \sum\limits_{s'} \Ps \R 		 + \gamma \sum\limits_{s'} \Ps  \sum\limits_{a'} \pi(s',a') Q(s',a')  \\
+      	      &= \sum\limits_{s'} \Ps \Big[ \R	  	 + \gamma \underbrace{ \sum\limits_{a'} \pi(s',a') Q(s',a')}_{V^{\pi}(s')} \Big] 
+\end{align*}
+
+We not that the last term in the expansion of Q, contains Equation \ref{v-rec}. So we can substitute it back in and get:
+
+
+\begin{equation}
+  Q^{\pi}(s,a) = \sum\limits_{s'} \Ps \Big[ \R	 + \gamma V^{\pi}(s')  \Big] 
+\end{equation}
+
+\end{document}
