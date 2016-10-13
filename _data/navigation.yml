@@ -4,11 +4,11 @@ main:
   - title: "Projects"
     url: /projects/
 
-  - title: "Computer Science"
-    url: /computer-science-archive/
-
   - title: "Machine Learning"
     url: /machine-learning-archive/
+
+  - title: "Computer Science"
+    url: /computer-science-archive/
 
   - title: "Blog"
     url: /blog/
@@ -20,4 +20,19 @@ main:
     url: /about/
 
 docs:
-  - title: Home
+  - title: Navigation
+    children:
+      - title: Home
+        url: /
+      - title: Projects
+        url: /projects/
+      - title: Machine Learning
+        url: /machine-learning-archive/
+      - title: Computer Science
+        url: /computer-science-archive/
+      - title: Blog
+        url: /blog/
+      - title: Contact
+        url: /contact/
+      - title: About
+        url: /about/
