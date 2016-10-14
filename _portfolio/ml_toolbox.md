@@ -11,14 +11,20 @@ sidebar:
 
 {% include base_path %}
 
+{% include image.html
+           img="/projects/ml_toolbox/ada-kernel.png"
+           bbox="false"
+%}
 
 During my time as Ph.D at the LASA group in EPFL I developed a [Machine Learning toolbox](https://github.com/epfl-lasa/ML_toolbox)
 for an advanced machine learning class with my fellow teaching assistant colleges. My contributions included the
 following components:
 
 * Toolbox structure
+* Bayesian linear regression
+* Gaussian Process regression
 * Exercises on Kernel-PCA methods for cluster discovery
-* Reinforcement Learning component.
+* Reinforcement Learning 
 
 
 {% include gif.html
