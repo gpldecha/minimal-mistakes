@@ -20,6 +20,8 @@ A tutorial given at **NIPS 2015** by Richard Sutton.
 * [Policy Search: Methods and Applications](http://icml.cc/2015/tutorials/PolicySearch.pdf): A tutorial given at **ICML 2015** by Jan Peters and
   Gerhard Neumann.
 
+* [Representation and Learning Methods for Complex Outputs](https://www.youtube.com/watch?v=8UKUC5Qx_uc): Talk **NIPS 2014** by Richard Sutton.
+
 
 
 
