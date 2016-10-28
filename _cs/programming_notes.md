@@ -34,7 +34,8 @@ the program.
 
 ## How To Package Your Python Code
 
-[How To Package Your Python Code](https://python-packaging.readthedocs.io/en/latest/)
+* [How To Package Your Python Code](https://python-packaging.readthedocs.io/en/latest/)
+* [Uploading your project to pypi](https://packaging.python.org/distributing/#uploading-your-project-to-pypi)
 
 ## module path system
 
