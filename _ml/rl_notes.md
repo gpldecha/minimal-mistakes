@@ -12,6 +12,17 @@ header:
 <!-- KaTeX -->
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+# Talks and tutorials on RL
+
+* [Introduction to Reinforcement Learning with Function Approximation](http://media.nips.cc/Conferences/2015/tutorialslides/SuttonIntroRL-nips-2015-tutorial.pdf):
+A tutorial given at **NIPS 2015** by Richard Sutton.
+
+* [Policy Search: Methods and Applications](http://icml.cc/2015/tutorials/PolicySearch.pdf): A tutorial given at **ICML 2015** by Jan Peters and
+  Gerhard Neumann.
+
+
+
+
 # Value and Q-value recursion
 
 There are two forms the expected reward for a given state is encoded:
