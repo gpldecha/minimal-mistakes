@@ -9,8 +9,7 @@ header:
 
 # Row-major
 
-* (memory-layout-of-multi-dimensional-arrays)[http://eli.thegreenplace.net/2015/memory-layout-of-multi-dimensional-arrays/]
-
+* [memory-layout-of-multi-dimensional-arrays](http://eli.thegreenplace.net/2015/memory-layout-of-multi-dimensional-arrays/)
 
 # Terminology
 
