@@ -25,6 +25,9 @@ the program.
 
 * [wiki name mangling](https://en.wikipedia.org/wiki/Name_mangling#C.2B.2B)
 
+# C++
+
+* [Example of gtest with travis](https://github.com/bast/gtest-demo)
 
 # Python
 
