@@ -220,6 +220,7 @@ gems:
   - jekyll-feed
   - jemoji
   - gif_tag
+  - jekyll-maps
 
 # mimic GitHub Pages with --safe
 whitelist:
