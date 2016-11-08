@@ -23,5 +23,4 @@ gem 'jekyll-maps'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
-  gem 'jekyll-maps'
 end

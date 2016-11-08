@@ -10,8 +10,8 @@ header:
 excerpt: "Talk to me..."
 
 location:
-  latitude: '48.8587741'
-  longitude: '2.2074741'
+  latitude: 48.8587741
+  longitude: 2.2074741
 ---
 
 {% google_map %}
