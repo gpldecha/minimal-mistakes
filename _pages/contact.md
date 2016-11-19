@@ -8,13 +8,8 @@ header:
   overlay_color: "#333"
 
 excerpt: "Talk to me..."
-
-location:
-  latitude: 48.8587741
-  longitude: 2.2074741
 ---
 
-{% google_map %}
 
 
 <body>
@@ -28,6 +23,3 @@ location:
       <input type="submit" value="Send">
   </form>
 </body>
-
-
-# I AM HERE
