@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Machine Learning"
-permalink: /machine-learning-archive/
+permalink: /ml/
 
 header:
   overlay_image: ml.png

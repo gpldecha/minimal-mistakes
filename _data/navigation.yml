@@ -5,10 +5,10 @@ main:
     url: /projects/
 
   - title: "Machine Learning"
-    url: /machine-learning-archive/
+    url: /ml/
 
   - title: "Computer Science"
-    url: /computer-science-archive/
+    url: /cs/
 
   - title: "Blog"
     url: /blog/
@@ -27,9 +27,9 @@ docs:
       - title: Projects
         url: /projects/
       - title: Machine Learning
-        url: /machine-learning-archive/
+        url: /ml/
       - title: Computer Science
-        url: /computer-science-archive/
+        url: /cs/
       - title: Blog
         url: /blog/
       - title: Contact

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Computer science"
-permalink: /computer-science-archive/
+permalink: /cs/
 
 header:
   overlay_image: code.jpg
