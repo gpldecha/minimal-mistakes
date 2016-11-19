@@ -4,7 +4,7 @@ title: "Computer science"
 permalink: /cs/
 
 header:
-  overlay_image: code.jpg
+  overlay_image: code2.jpg
   caption: "Photo credit: [**Unsplash**](http://feelgrafix.com/997342-code.html)"
 
 excerpt: "A collection of computer science articles"
