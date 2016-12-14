@@ -4,8 +4,8 @@ layout: single
 author_profile: true
 ---
 
-I have written a C++ library for [non-parametric regression](https://github.com/gpldecha/non-parametric-regression). Now C++ is great if you
-want to write efficient code, however it is less than ideal when it comes to plotting
+I have written a C++ library for [non-parametric regression](https://github.com/gpldecha/non-parametric-regression).
+Now C++ is great if you want to write efficient code, however it is less than ideal when it comes to plotting
 and visualising data. For this either Python or Matlab are perfect candidates.
 
 So I have written a Python wrapper to my C++ library with Boost.Python and I want to
@@ -35,25 +35,71 @@ If the wrapper is installed via pip it should first install the C++ library whic
 is a dependency and then proceed to install the Python wrapper using standard
 pip.
 
-## How to deploy a C++ package
+## How to deploy a C++ shared library package
 
-In my mind a deployed package should be easy to install. As I am predominantly
-using Ubuntu I would like to create an Ubuntu package.
-
-* [Getting setup](http://packaging.ubuntu.com/html/getting-set-up.html)
-
-* [Packaging New Software](http://packaging.ubuntu.com/html/packaging-new-software.html)
-
-I encountered problems with dh_install
+I first created a source tar ball for release on [github](https://github.com/gpldecha/non-parametric-regression/releases)
+which I downloaded and extracted to my debian packaging work director:
 
 ```bash
-$ dh_install: npregression-dev missing files (usr/lib/lib*.so), aborting
+$ pwd
+$ /home/username/ubuntu_packaging/npregression_package
+$ ls
+$ non-parametric-regression-1.0 non-parametric-regression-1.0.tar.gz
+```
+I followed the same steps as in my previous post. When I run the command:
+
+```bash
+bzr dh-make libnpregression 1.0 non-parametric-regression-1.0.tar.gz
+```
+
+I made sure to choose the (l)ibrary option when prompted which type debian
+package I wanted. I proceed to build the library,
+
+```bash
+./libnpregression$ bzr builddeb -- -us -uc
+```
+however I encountered the following error:
+
+```bash
+
+dh_install
+dh_install: libnpregression-dev missing files (usr/lib/lib*.a), aborting
+make: *** [binary] Error 255
+dpkg-buildpackage: error: fakeroot debian/rules binary gave error exit status 2
+debuild: fatal error at line 1364:
+dpkg-buildpackage -rfakeroot -D -us -uc failed
+bzr: ERROR: The build failed.
+
+```
+There are two important files to edit:
+
+* libnpregression1.install
+
+  usr/lib/npr/lib*.so
+
+
+* libnpregression-dev.install
+
+usr/include/*
+
+
+All builds until the next error occurs:
+
+```bash
+
+dh_shlibdeps
+dpkg-shlibdeps: error: no dependency information found for /usr/local/lib/libarmadillo.so.5 (used by debian/libnpregression1/usr/lib/npr/liblwr.so)
+dh_shlibdeps: dpkg-shlibdeps -Tdebian/libnpregression1.substvars debian/libnpregression1/usr/lib/npr/liblwr.so returned exit code 2
+make: *** [binary] Error 2
+dpkg-buildpackage: error: fakeroot debian/rules binary gave error exit status 2
+debuild: fatal error at line 1364:
+dpkg-buildpackage -rfakeroot -D -us -uc failed
+bzr: ERROR: The build failed.
 
 ```
 
-So I used:
 
-[dh-helper](http://help.ubuntu-it.org/6.06/ubuntu/packagingguide/it/basic-debhelper.html)
+
 
 ### C++ shared library
 
@@ -73,4 +119,6 @@ When a python package when deployed will typically reside on the [Python Package
 
 ## resources
 
-* [Tutorial on creating a distributable Python package using Setuptools with Boost-Python](http://robotics.usc.edu/~ampereir/wordpress/?p=202)
+[Debian Library Packaging guide](https://www.netfort.gr.jp/~dancer/column/libpkg-guide/libpkg-guide.pdf)
+
+[Tutorial on creating a distributable Python package using Setuptools with Boost-Python](http://robotics.usc.edu/~ampereir/wordpress/?p=202)
