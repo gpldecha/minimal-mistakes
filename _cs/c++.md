@@ -40,4 +40,4 @@ std::move simply takes the argument and cast's it to an rvalue. You can think
 of it as cast_rvalue, it does not do any move but is done prior to implementing an
 efficient move.
 
-std::forward a conditional cast to an rvalue. 
+std::forward a conditional cast to an rvalue.
