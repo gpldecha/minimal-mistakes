@@ -8,7 +8,8 @@ author_profile: true
 
 First do all all the steps in:
 
-* [Getting setup](http://packaging.ubuntu.com/html/getting-set-up.html)
+1. [Getting setup](http://packaging.ubuntu.com/html/getting-set-up.html)
+2. [Packaging New Software](http://packaging.ubuntu.com/html/packaging-new-software.html)
 
 I will be doing a walk through of the example given in the  [Packaging New Software](http://packaging.ubuntu.com/html/packaging-new-software.html)
 in which you will be deploying a simple hello world program.
