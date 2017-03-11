@@ -18,6 +18,8 @@ I first created a directory hello_package, in my ubuntu package deployment works
 and downloaded the hello world program as outlined in [Packaging New Software](http://packaging.ubuntu.com/html/packaging-new-software.html):
 
 
+
+
 ```bash
 $ pwd
 $ /home/username/ubuntu_packaging/hello_package
