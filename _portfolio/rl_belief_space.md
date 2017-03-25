@@ -11,7 +11,6 @@ header:
 <!-- KaTeX -->
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 {% include base_path %}
-{{ site.url }}/documents/fpi_pomdp.pdf
 
 
 # Objective
@@ -27,6 +26,8 @@ as Peg in hole (PiH), whilst deprived of vision. To accomplish this the followin
 * Gather a dataset of demonstrations of the task (find and connect the power socket).
 * Learn a value function of the task via fitted reinforcement learning.
 * Learn the parameters of the POMDP policy whilst weighting the data points by the value function.
+
+A technical report of this project can be downloaded from [here]({{ site.url }}/documents/fpi_pomdp.pdf).
 
 # Notation and variables
 
