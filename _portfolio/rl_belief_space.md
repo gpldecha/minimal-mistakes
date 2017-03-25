@@ -10,9 +10,12 @@ header:
 
 <!-- KaTeX -->
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+{% include base_path %}
+{{ site.url }}/documents/fpi_pomdp.pdf
 
 
 # Objective
+
 
 
 The parameters of a continuous state and action POMDP policy are initially learned
