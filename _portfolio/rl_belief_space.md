@@ -25,7 +25,7 @@ as Peg in hole (PiH), whilst deprived of vision. To accomplish this the followin
 * Learn a value function of the task via fitted reinforcement learning.
 * Learn the parameters of the POMDP policy whilst weighting the data points by the value function.
 
-A technical report of this project can be downloaded from [here]({{ site.url }}/documents/fpi_pomdp.pdf).
+**A technical report of this project can be downloaded from:** [here]({{ site.url }}/documents/fpi_pomdp.pdf).
 
 # Notation and variables
 
