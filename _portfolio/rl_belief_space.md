@@ -1,11 +1,9 @@
 ---
-title: Reinforcement Learning in belief space
+title: Fitted Policy Iteration for a POMDPs for a continuous state-action space.
 excerpt: A POMDP policy is learned from demonstrations and improved in a Reinforcement learning framework.
 permalink: /projects/rl_belief_space/
 header:
   teaser: /projects/rl_pomdp/value-function-th.png
-  image:  /projects/rl_pomdp/value-function.png
-
 ---
 
 <!-- KaTeX -->
