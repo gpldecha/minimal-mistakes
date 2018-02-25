@@ -43,7 +43,85 @@ This repository holds the PX4 Pro flight control solution for drones, with the m
 3. [PX4-middleware](https://dev.px4.io/en/concept/middleware.html)
 
 
+* multiple applications known as Apps are runnig on the Pixhawk2:
 
+```bash
+~/src/Firmware/Tools$ ./mavlink_shell.py /dev/ttyACM0
+Connecting to MAVLINK...
+
+NuttShell (NSH)
+nsh> help
+...
+Builtin Apps:
+  adc
+  tone_alarm
+  fmu
+  px4io
+  rgbled
+  mpu6000
+  mpu9250
+  lsm303d
+  l3gd20
+  hmc5883
+  ms5611
+  sf0x
+  ll40ls
+  trone
+  gps
+  pwm_out_sim
+  ets_airspeed
+  ms4525_airspeed
+  ms5525_airspeed
+  sdp3x_airspeed
+  frsky_telemetry
+  sensors
+  px4flow
+  vmount
+  pwm_input
+  camera_trigger
+  bst
+  lis3mdl
+  ulanding_radar
+  bl_update
+  config
+  hardfault_log
+  mixer
+  mtd
+  nshterm
+  param
+  perf
+  pwm
+  reboot
+  top
+  ver
+  commander
+  send_event
+  load_mon
+  navigator
+  mavlink
+  gpio_led
+  land_detector
+  camera_feedback
+  ekf2
+  fw_att_control
+  fw_pos_control_l1
+  gnd_att_control
+  gnd_pos_control
+  mc_att_control
+  mc_pos_control
+  vtol_att_control
+  logger
+  uorb
+  dataman
+  px4_simple_app
+  serdis
+  sercon
+
+```
+
+Individual message channels between Applications (Apps) are called topics in PX4.
+
+[modules](https://dev.px4.io/en/middleware/modules_main.html)
 
 # [ArduPilot](https://github.com/ArduPilot/ardupilot)
 
