@@ -9,7 +9,7 @@ header:
 
 excerpt: "A collection of computer science articles"
 
-author_profile: true
+author_profile: false
 ---
 
 {% include base_path %}

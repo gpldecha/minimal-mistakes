@@ -2,10 +2,9 @@
 title: "C++"
 layout: single
 author_profile: true
-excerpt: "I note book of C++"
+excerpt: ""
 header:
   overlay_color: "#333"
-  overlay_image: ml2.jpg
 ---
 
 # move and forwarding

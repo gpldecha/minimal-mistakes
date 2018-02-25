@@ -1,17 +1,14 @@
 # main links links
 main:
 
-  - title: "Projects"
-    url: /projects/
-
   - title: "Machine Learning"
     url: /ml/
 
   - title: "Computer Science"
     url: /cs/
 
-  - title: "Blog"
-    url: /blog/
+  - title: "Notes"
+    url: /notes/
 
   - title: "About"
     url: /about/
@@ -21,13 +18,11 @@ docs:
     children:
       - title: Home
         url: /
-      - title: Projects
-        url: /projects/
       - title: Machine Learning
         url: /ml/
       - title: Computer Science
         url: /cs/
-      - title: Blog
-        url: /blog/
+      - title: Notes
+        url: /notes/
       - title: About
         url: /about/
