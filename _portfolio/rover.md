@@ -13,4 +13,7 @@ sidebar:
 {% include base_path %}
 
 
-# Objective
+{% include gif.html
+           gif="/projects/rover/rover.gif"    
+           title="Stroll in the park"
+%}
