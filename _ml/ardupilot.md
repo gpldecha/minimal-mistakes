@@ -25,6 +25,10 @@ sent to vehicle (over mavlink) in the form of goto commands.
 2. Velocity
 The function send_ned_velocity() below generates a SET_POSITION_TARGET_LOCAL_NED MAVLink message which is used to directly specify the speed components of the vehicle in the MAV_FRAME_LOCAL_NED frame (relative to home location). The message is re-sent every second for the specified duration.
 
+# RC overid
+
+[teleoperation_erle_rover](http://docs.erlerobotics.com/erle_robots/erle_rover/examples/teleoperation_erle_rover)
+
 # [PX4 pro](https://github.com/PX4/Firmware)
 
 [PX4 Pro](http://px4.io/)
