@@ -7,6 +7,9 @@ main:
   - title: "Computer Science"
     url: /cs/
 
+  - title: "Robotics"
+    url: /rb/
+
   - title: "Notes"
     url: /notes/
 
@@ -22,6 +25,8 @@ docs:
         url: /ml/
       - title: Computer Science
         url: /cs/
+      - title: Robotics
+        url: /rb/
       - title: Notes
         url: /notes/
       - title: About
