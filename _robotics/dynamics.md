@@ -13,8 +13,42 @@ header:
 <!-- KaTeX -->
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+Derivation of the Equation of motion of a three-link-manipulator:
+
+{% include image.html
+            img="/robotics/three-link-manipulator.png"
+            title="Two-link-manipulator"
+            fig_id="two-link-manipulator"%}
+
+This part is necessary for programming Exercise 6 of
 [Introduction to Robotics
-Mechanics and Control](http://www.mech.sharif.ir/c/document_library/get_file?uuid=5a4bb247-1430-4e46-942c-d692dead831f&groupId=14040)
+Mechanics and Control](http://www.mech.sharif.ir/c/document_library/get_file?uuid=5a4bb247-1430-4e46-942c-d692dead831f&groupId=14040). The following parameters are specified:<br/>
+
+$$l1 = l2 = 0.5m$$<br/>
+
+$$m1 = 4.6$$Kg<br/>
+
+$$m2 = 2.3$$Kg<br/>
+
+$$m3 = 1.0$$Kg<br/>
+
+$$g = 9.8 m/s^2$$<br/>
+
+For link 3 the center of mass is located at the origin of frame {3}
+
+Inertia tensor for link 3 is:
+
+$$ {}^{C_s}I =  \begin{bmatrix}
+       0.05 & 0   & 0 \\
+       0    & 0.1 & 0 \\
+       0    & 0   & 0.1
+\end{bmatrix} $$
+
+The vector that locate each centre of mass relative to the respective link frame are:
+
+$${}^1P_1 = l_1 \hat{X}_1$$<br/>
+$${}^2P_2 = l_2 \hat{X}_2$$<br/>
+$${}^3P_3 = 0$$<br/>
 
 **The outward iteration for link 3**
 
