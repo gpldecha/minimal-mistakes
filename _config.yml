@@ -161,7 +161,9 @@ collections:
   cs:
     output: true
     permalink: /:collection/:path/
-
+  robotics:
+    output: true
+    permalink: /:collection/:path
 
 defaults:
 # _portfolio
