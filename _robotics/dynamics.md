@@ -329,23 +329,17 @@ $$ \color{green}{ +\; m_2 l^2_1 \ddot{\theta}_1 +  m_2 l_1 g s_{12} s_2 + m_2 l_
 
 $$ \tau_i = {}^in^{T}_i\; {}^i\hat{Z}_i $$<br/>
 
-$$ \boldsymbol{\tau}_1 = $$
-$$ m_3 l^2_1 \ddot{\theta}_1 + m_3 l_1 g (s_{12}s_2 + c_{12} c_2) + I_{zz}(\ddot{\theta_1} + \ddot{\theta_2} + \ddot{\theta_3})$$<br>
+$$ \boldsymbol{\tau}_1 = \color{grey}{m_2l^2_2(\ddot{\theta}_1 + \ddot{\theta}_2) + m_2 l_1 l_2 c_2 (2\ddot{\theta}_1 + \ddot{\theta}_2) + (m_1 + m_2)l^2_1 \ddot{\theta}_1 - m_2 l_1 l_2 s_2 \dot{\theta}^2_2 - 2m_2 l_1 l_2 s_2 \dot{\theta}_1 \dot{\theta}_2 }$$<br>
 
-$$ +\; m_2l^2_2(\ddot{\theta}_1 + \ddot{\theta}_2) + m_2 l_1 l_2 c_2 (2\ddot{\theta}_1 + \ddot{\theta}_2) + (m_1 + m_2)l^2_1 \ddot{\theta}_1 - m_2 l_1 l_2 s_2 \dot{\theta}^2_2 $$<br>
+$$ +\; \color{grey}{ m_2 l_2 g c_{12} + (m_1 + m_2)l_1 g c_1}$$<br/>
 
-$$ -\; 2m_2 l_1 l_2 s_2 \dot{\theta}_1 \dot{\theta}_2 + m_2 l_2 g c_{12} + (m_1 + m_2)l_1 g c_1$$<br/>
+$$ + \; m_3 l^2_2 c_3 (\ddot{\theta}_1 + \ddot{\theta}_2) + m_3 l_1 l_2 c_2 (\ddot{\theta}_1 + \ddot{\theta}_2) + m_3 l^2_1 \ddot{\theta}_1 + m_3 l_1 l_2 c_{23} \ddot{\theta}_1 + I_{zz}(\ddot{\theta_1} + \ddot{\theta_2} + \ddot{\theta_3})$$<br>
 
-$$+\; m_3 l^2_2 c_3 (\ddot{\theta}_1 + \ddot{\theta}_2) + m_3 l_1 l_2 c_2 (\ddot{\theta}_1 + \ddot{\theta}_2) + m_3 l_1 l_2 c_{23} \ddot{\theta}_1  $$ <br>
+$$+\; m_3 l^2_2 (\dot{\theta}_1 + \dot{\theta}_2)^2 + m_3 l_1 l_2 s_2 (\dot{\theta}_1 + \dot{\theta}_2) + m_3 l_1 l_2 s_{23} \dot{\theta}^2_1 + m_3 l_2 g c_{123} + m_3 l_1 g (s_{12}s_2 + c_{12} c_2) $$
 
-$$+\; m_3 l^2_2 (\dot{\theta}_1 + \dot{\theta}_2)^2 + m_3 l_1 l_2 s_2 (\dot{\theta}_1 + \dot{\theta}_2) + m_3 l_1 l_2 s_{23} \dot{\theta}^2_1 + m_3 l_2 g c_{123}$$
+$$ \boldsymbol{\tau}_2 = \color{grey}{m_2l_1l_2c_2 \ddot{\theta}_1 + m_2l_1l_2s_2\dot{\theta}^2_1 + m_2 l_2 g c_{12} + m_2l^2_2(\ddot{\theta}_1 + \ddot{\theta}_2)} + I_{zz}(\ddot{\theta_1} + \ddot{\theta_2} + \ddot{\theta_3})$$<br/>
 
-$$ \boldsymbol{\tau}_2 = m_2l_1l_2c_2 \ddot{\theta}_1 + m_2l_1l_2\dot{\theta}^2_1s_2 + m_2 l_2 g c_{12} + m_2l^2_2(\ddot{\theta}_1 + \ddot{\theta}_2) + I_{zz}(\ddot{\theta_1} + \ddot{\theta_2} + \ddot{\theta_3})$$<br/>
-
-$$ +\; m_3 l^2_2 c_3 (\ddot{\theta}_1 + \ddot{\theta}_2) + m_3 l^2_2 s_3 (\dot{\theta}_1 + \dot{\theta}_2)^2$$ <br>
-
-$$ + \; m_3 l_1 l_2 c_{23}\ddot{\theta}_1 + m_3 l_1 l_2 s_{23} \dot{\theta}^2_1 + m_3 l_2 gc_{123} $$ <br>
-
+$$ + \; m_3 l_1 l_2 c_{23}\ddot{\theta}_1 + m_3 l_1 l_2 s_{23} \dot{\theta}^2_1 + m_3 l_2 gc_{123} + m_3 l^2_2 c_3 (\ddot{\theta}_1 + \ddot{\theta}_2) + m_3 l^2_2 s_3 (\dot{\theta}_1 + \dot{\theta}_2)^2$$ <br>
 
 $$\boldsymbol{\tau}_3 = I_{zz}(\ddot{\theta_1} + \ddot{\theta_2} + \ddot{\theta_3})$$
 
@@ -355,8 +349,8 @@ $$\boldsymbol{\tau}_3 = I_{zz}(\ddot{\theta_1} + \ddot{\theta_2} + \ddot{\theta_
 $$ \tau = M(\theta)\ddot{\theta} + V(\theta, \dot{\theta}) + G(\theta)$$
 
 $$ M(\theta)\ddot{\theta} = \begin{bmatrix}
- m_3 l^2_1 + I_{zz} + l^2_2m_2 + 2l_1l_2m_2c_2 +l^2_1(m_1 + m_2) + m_3 l^2_2 c_3 + m_3 l_1 l_2 c_2 + m_3 l_1 l_2 c_{23} & I_{zz} + l^2_2 m_2 + l_1l_2m_2c_2 +  l^2_2 m_2 + l_1l_2m_2c_2 + m_3 l^2_2 c_3 + m_3 l_1 l_2 c_2 & I_{zz} \\
- I_{zz} + l^2_2m_2 + l_1l_2m_2c_2 + m_3 l^2_2 c_3 + m_3 l_1 l_2 c_{23} & I_{zz} + m_3 l^2_2 c_3 & I_{zz} \\
+ I_{zz} + m_3 l^2_1 + m_3 l^2_2 c_3 + m_3 l_1 l_2 c_2 + m_3 l_1 l_2 c_{23} +  \color{grey}{l^2_2m_2 + 2l_1l_2m_2c_2 +l^2_1(m_1 + m_2)} & I_{zz} + m_3 l^2_2 c_3 + m_3 l_1 l_2 c_2 + \color{grey}{l^2_2 m_2 + l_1l_2m_2c_2} & I_{zz} \\
+ I_{zz} + m_3 l^2_2 c_3 + m_3 l_1 l_2 c_{23} + \color{grey}{l^2_2m_2 + l_1l_2m_2c_2}  & I_{zz} + m_3 l^2_2 c_3 + \color{grey}{l^2_2 m_2} & I_{zz} \\
  I_{zz} & I_{zz} & I_{zz}
 \end{bmatrix}
 \begin{bmatrix}
@@ -368,14 +362,14 @@ $$
 
 $$V(\theta, \dot{\theta}) =
 \begin{bmatrix}
-  -m_2 l_1 l_2 s_2 \dot{\theta}^2_2 - 2m_2l_1l_2s_2\dot{\theta}_1\dot{\theta}_2 +  m_3 l^2_2 (\dot{\theta}_1 + \dot{\theta}_2)^2 + m_3 l_1 l_2 s_2 (\dot{\theta}_1 + \dot{\theta}_2) + m_3 l_1 l_2 s_{23} \dot{\theta}^2_1 \\
-  m_2 l_1 l_2 s_2 \dot{\theta}^2_1 +  m_3 l^2_2 s_3 (\dot{\theta}_1 + \dot{\theta}_2)^2 + m_3 l_1 l_2 s_{23} \dot{\theta}^2_1\\
+  m_3 l^2_2 (\dot{\theta}_1 + \dot{\theta}_2)^2 + m_3 l_1 l_2 s_2 (\dot{\theta}_1 + \dot{\theta}_2) + m_3 l_1 l_2 s_{23} \dot{\theta}^2_1 \color{grey}{-m_2 l_1 l_2 s_2 \dot{\theta}^2_2 - 2m_2l_1l_2s_2\dot{\theta}_1\dot{\theta}_2} \\
+  m_3 l^2_2 s_3 (\dot{\theta}_1 + \dot{\theta}_2)^2 + m_3 l_1 l_2 s_{23} \dot{\theta}^2_1 \color{grey}{+ m_2 l_1 l_2 s_2 \dot{\theta}^2_1}\\
   0
 \end{bmatrix}$$
 
 $$G(\theta) =
 \begin{bmatrix}
-  m_3 l_2 g c_{123} + m_3 l_1 g c_1 + m_2 l_2 g c_{12} + (m_1 + m_2)l_1 g c_1 \\
-  m_3 l_2 g c_{123} + m_2 l_2 g c_{12} \\
+  m_3 l_2 g c_{123} + m_3 l_1 g c_1 + \color{grey}{m_2 l_2 g c_{12} + (m_1 + m_2)l_1 g c_1} \\
+  m_3 l_2 g c_{123} + \color{grey}{m_2 l_2 g c_{12}} \\
   0
 \end{bmatrix}$$
