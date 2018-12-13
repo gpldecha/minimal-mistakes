@@ -36,6 +36,9 @@ the v-function is a function of the q-function.
 
 See [RVQ.pdf](/ml/docs/RQV.pdf) for the derivation of the recursion and the link between both functional forms.
 
+See [RL_Solutions_Chap3.pdf](/ml/docs/RL_Solutions_Chap3.pdf) for the
+effect of sign and constants in the reward function.
+
 # Policy Gradient Theorem
 
 $$ a = \pi(s;\theta) $$
