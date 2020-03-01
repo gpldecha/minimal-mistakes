@@ -37,6 +37,10 @@ uname -r
 
 [Notes on compiling preempt_rt](http://kernel-notes.gbittencourt.net/compiling-preempt-rt/)
 
+### Setting RT priority on non-rt kernel
+
+[Audio jack rt Linux configuration](https://jackaudio.org/faq/linux_rt_config.html)
+
 ### References
 
 [Intel Optimizing Computer applications for latency](https://software.intel.com/en-us/articles/optimizing-computer-applications-for-latency-part-1-configuring-the-hardware)
