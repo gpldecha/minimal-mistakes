@@ -65,6 +65,7 @@ The remaining 8 process for both cpus are:
 * kworker/1:0H PRI 0 NI -20
 
 [linux kernel software interrupts](https://lwn.net/Articles/520076/)
+
 [Real-time Linux communications: an evaluation of the Linux
 communication stack for real-time robotic applications](https://arxiv.org/pdf/1808.10821.pdf)
 
@@ -98,8 +99,8 @@ communication stack for real-time robotic applications](https://arxiv.org/pdf/18
 ### rx-tx optimization
 
 
-/sys/class/net holds all the network interfaces
-/sys/class/net/eno1/queues holds queues for receiving and sending data over the network interface
+*/sys/class/net* holds all the network interfaces
+*/sys/class/net/eno1/queues* holds queues for receiving and sending data over the network interface
 card. In my case I have:
 
 * rx-0  

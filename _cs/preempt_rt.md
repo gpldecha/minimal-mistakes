@@ -14,7 +14,6 @@ Check which preempts are set on your distribution:
 ```
 * CONFIG_PREEMPT
 * CONFIG_PREEMPTIRQ_EVENTS
-*
 * CONFIG_HZ
 
 These options should be set (according to [Real time ethernet](https://www.osadl.org/Real-time-Ethernet-UDP-worst-case-roun.qa-farm-rt-ethernet-udp-monitor.0.html))
@@ -35,4 +34,19 @@ These options should be set (according to [Real time ethernet](https://www.osadl
 uname -r
 ```
 [Ubuntu and linux kernel versions](https://people.canonical.com/~kernel/info/kernel-version-map.html)
+
 [Notes on compiling preempt_rt](http://kernel-notes.gbittencourt.net/compiling-preempt-rt/)
+
+### References
+
+[Intel Optimizing Computer applications for latency](https://software.intel.com/en-us/articles/optimizing-computer-applications-for-latency-part-1-configuring-the-hardware)
+
+
+### Video
+
+[Maintaining a Real Time Stable Kernel - Steven Rostedt, VMware
+](https://www.youtube.com/watch?v=pIJ3Zv_uxn0&list=WL&index=8&t=1163s)
+
+[Kernel Recipes 2016 - Understanding a Real-Time System (more than just a kernel)](https://www.youtube.com/watch?v=w3yT8zJe0Uw&list=PL4bIb95zE1Mqv1VbHeBCzH7K0ZscOgAz_)
+
+[Linux Performance Optimization - Red Hat EX442 - Complete Video Course](https://www.youtube.com/watch?v=2kNih0fqnzQ)
